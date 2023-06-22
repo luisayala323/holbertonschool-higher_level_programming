@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""unction that returns True if the object is
+
+"""Function that returns True if the object is
  an instance of a class that inherited
    (directly or indirectly) from the specified class"""
 
