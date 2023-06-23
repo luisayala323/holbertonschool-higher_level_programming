@@ -1,6 +1,9 @@
 #!/usr/bin/python3
 
-"""Defines a text file-reading functionality"""
+"""
+Imports a function that reads a text file (UTF8)
+and prints it
+"""
 
 
 def reading(filename=""):
