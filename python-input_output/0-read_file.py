@@ -14,4 +14,5 @@ def reading(filename=""):
     """
 
     with open(filename, 'r') as f:
-        print(f.read(), end="")
+        for line in f:
+            print(line, end="")
