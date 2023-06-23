@@ -1,18 +1,15 @@
 #!/usr/bin/python3
-
 """
-Imports a function that reads a text file (UTF8)
-and prints it
+This module have a function called read_file,
+that reads and prints a file that it have been past
 """
 
 
-def reading(filename=""):
+def read_file(filename=""):
     """
-    Function that reads and prints  UTF8 text file
-    Args: filename (string): name of the file
-
+    This function that read a text file
+    and prints it to stdout
     """
-
-    with open(filename, 'r') as f:
-        for line in f:
+    with open(filename, 'r') as fd:
+        for line in fd:
             print(line, end="")
