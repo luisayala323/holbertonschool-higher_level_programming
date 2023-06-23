@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-"""module that has a class names Square
+"""
+module contains a class names Square
 that inherited from Rectangle
 """
 
@@ -13,10 +14,16 @@ class Square(Rectangle):
     """
 
     def __init__(self, size):
-        """ This initialize square class by assigning the size"""
+        """ initialize square class by assigning the size"""
         self.__size = size
         super().integer_validator("size", size)
 
     def area(self):
-        """ return area of the square """
+        """ returns the area of the square """
         return self.__size ** 2
+
+    def __str__(self):
+        """
+        prints square description
+        """
+        return f"[Square] {self.__size}/{self.__size}"
