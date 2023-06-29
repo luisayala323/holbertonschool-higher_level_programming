@@ -25,3 +25,47 @@ class Rectangle(Base):
         self.height = height
         self.x = x
         self.y = y
+
+        # Getter and setter for width
+    @property
+    def width(self):
+        """Get the width of the rectangle"""
+        return self.__width
+
+    @width.setter
+    def width(self, value):
+        """Set the width of the rectangle"""
+        self.__width = value
+
+    # Getter and setter for height
+    @property
+    def height(self):
+        """Get the height of the rectangle"""
+        return self.__height
+
+    @height.setter
+    def height(self, value):
+        """Set the height of the rectangle"""
+        self.__height = value
+
+    # Getter and setter for x-coordinate
+    @property
+    def x(self):
+        """Get the x-coordinate of the rectangle's position"""
+        return self.__x
+
+    @x.setter
+    def x(self, value):
+        """Set the x-coordinate of the rectangle's position"""
+        self.__x = value
+
+    # Getter and setter for y-coordinate
+    @property
+    def y(self):
+        """Get the y-coordinate of the rectangle's position"""
+        return self.__y
+
+    @y.setter
+    def y(self, value):
+        """Set the y-coordinate of the rectangle's position"""
+        self.__y = value
