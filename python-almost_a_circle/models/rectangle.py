@@ -14,7 +14,7 @@ class Rectangle(Base):
 
     def __init__(self, width, height, x=0, y=0, id=None):
         """
-        Initializes a new Rectangle instance.
+        Initializes a Rectangle instance.
 
         Args:
             width (int): The width of the Rectangle.
@@ -37,7 +37,7 @@ class Rectangle(Base):
     @property
     def width(self):
         """
-        Get the width of the rectangle
+        Getter for the width attribute.
         """
         return self.__width
 
@@ -45,8 +45,10 @@ class Rectangle(Base):
     def width(self, value):
         """
         Setter for the width attribute.
+
         Args:
             value (int): The value to set as the width.
+
         Raises:
             TypeError: If the value is not an integer.
             ValueError: If the value is less than or equal to 0.
@@ -61,7 +63,7 @@ class Rectangle(Base):
     @property
     def height(self):
         """
-        Get the height of the rectangle
+        Getter the height attribute.
         """
         return self.__height
 
@@ -69,8 +71,10 @@ class Rectangle(Base):
     def height(self, value):
         """
         Setter for the height attribute.
+
         Args:
             value (int): The value to set as the height.
+
         Raises:
             TypeError: If the value is not an integer.
             ValueError: If the value is less than or equal to 0.
@@ -84,7 +88,7 @@ class Rectangle(Base):
     @property
     def x(self):
         """
-        Getter for the x-coordinate.
+        Getter for the x attribute.
         """
         return self.__x
 
@@ -92,8 +96,10 @@ class Rectangle(Base):
     def x(self, value):
         """
         Setter for the x attribute.
+
         Args:
             value (int): The value to set as the x-coordinate.
+
         Raises:
             TypeError: If the value is not an integer.
             ValueError: If the value is less than 0.
@@ -107,7 +113,7 @@ class Rectangle(Base):
     @property
     def y(self):
         """
-        Getter for the y-coordinate.
+        Getter for the y attribute.
         """
         return self.__y
 
@@ -115,8 +121,10 @@ class Rectangle(Base):
     def y(self, value):
         """
         Setter for the y attribute.
+
         Args:
             value (int): The value to set as the y-coordinate.
+
         Raises:
             TypeError: If the value is not an integer.
             ValueError: If the value is less than 0.
