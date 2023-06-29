@@ -26,7 +26,6 @@ class Rectangle(Base):
         self.x = x
         self.y = y
 
-        # Getter and setter for width
     @property
     def width(self):
         """Get the width of the rectangle"""
@@ -41,7 +40,6 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__width = value
 
-    # Getter and setter for height
     @property
     def height(self):
         """Get the height of the rectangle"""
@@ -56,7 +54,6 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__height = value
 
-    # Getter and setter for x-coordinate
     @property
     def x(self):
         """Get the x-coordinate of the rectangle's position"""
@@ -71,7 +68,6 @@ class Rectangle(Base):
             raise ValueError("width must be > 0")
         self.__x = value
 
-    # Getter and setter for y-coordinate
     @property
     def y(self):
         """Get the y-coordinate of the rectangle's position"""
