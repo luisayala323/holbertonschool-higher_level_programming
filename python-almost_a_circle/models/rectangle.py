@@ -129,8 +129,15 @@ class Rectangle(Base):
             raise ValueError("y must be >= 0")
         self.__y = value
 
-        def area(self):
-            """
-            Calculates are method of the rectangle.
-            """
+    def area(self):
+        """
+        Calculates are method of the rectangle.
+        """
         return (self.__width * self.__height)
+
+    def display(self):
+        """
+        Prints the rectangle using the '#' character.
+        """
+        for _ in range(self.__height):
+            print("#" * self.__width)
