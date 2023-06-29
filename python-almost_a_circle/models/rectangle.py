@@ -24,6 +24,11 @@ class Rectangle(Base):
             id (int, optional): The id of the Rectangle. Default to None.
         """
         super().__init__(id)
+        self.__width = None
+        self.__height = None
+        self.__x = None
+        self.__y = None
+
         self.width = width
         self.height = height
         self.x = x
@@ -31,12 +36,14 @@ class Rectangle(Base):
 
     @property
     def width(self):
-        """Get the width of the rectangle"""
+        """
+        Get the width of the rectangle
+        """
         return self.__width
 
     @width.setter
     def width(self, value):
-          """
+        """
         Setter for the width attribute.
         Args:
             value (int): The value to set as the width.
@@ -44,7 +51,8 @@ class Rectangle(Base):
             TypeError: If the value is not an integer.
             ValueError: If the value is less than or equal to 0.
         """
-      if not isinstance(value, int):
+
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value <= 0:
             raise ValueError("width must be > 0")
@@ -105,7 +113,7 @@ class Rectangle(Base):
 
     @y.setter
     def y(self, value):
-         """
+        """
         Setter for the y attribute.
         Args:
             value (int): The value to set as the y-coordinate.
