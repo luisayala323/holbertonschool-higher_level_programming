@@ -137,7 +137,8 @@ class Rectangle(Base):
 
     def display(self):
         """
-        Prints the rectangle using the '#' character.
+        Prints the rectangle using the '#' character, 
+        taking into account the x and y coordinates.
         """
         print("\n" * self.__y, end="")
         for _ in range(self.__height):
