@@ -137,8 +137,8 @@ class Rectangle(Base):
 
     def display(self):
         """
-        Prints the rectangle using the '#' character, 
-        taking into account the x and y coordinates.
+        Prints the rectangle using the '#' character,
+          taking into account the x & y coordinates.
         """
         print("\n" * self.__y, end="")
         for _ in range(self.__height):
@@ -152,3 +152,27 @@ class Rectangle(Base):
             str: The string representation of the Rectangle.
         """
         return f"[Rectangle] ({self.id}) {self.__x}/{self.__y} - {self.__width}/{self.__height}"
+
+    def update(self, *args):
+        """
+        Assigns arguments to each attribute in the specified order:
+        1st argument: id attribute
+        2nd argument: width attribute
+        3rd argument: height attribute
+        4th argument: x attribute
+        5th argument: y attribute
+
+        Args:
+            *args: Arguments to assign to the attributes.
+        """
+        num_args = len(args)
+        if num_args > 0:
+            self.id = args[0]
+        if num_args > 1:
+            self.width = args[1]
+        if num_args > 2:
+            self.height = args[2]
+        if num_args > 3:
+            self.x = args[3]
+        if num_args > 4:
+            self.y = args[4]
