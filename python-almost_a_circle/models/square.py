@@ -64,3 +64,15 @@ class Square(Rectangle):
                 self.x = args[2]
             if num_args > 3:
                 self.y = args[3]
+
+    def to_dictionary(self):
+        """
+        Returns a dictionary representation of square method
+        """
+        return {
+            'id': self.id,
+            'width': self.width,
+            'height': self.height,
+            'x': self.x,
+            'y': self.y
+        }
