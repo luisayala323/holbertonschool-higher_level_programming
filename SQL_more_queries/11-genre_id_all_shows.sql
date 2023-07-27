@@ -1,4 +1,4 @@
--- lists all shows conntained in the database
+-- lists all shows contained in the database
 SELECT tv_shows.title,
     tv_show_genres.genre_id
 FROM tv_shows
