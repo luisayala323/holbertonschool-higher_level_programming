@@ -21,7 +21,7 @@ def list_states_with_n(username, password, database_name):
         # Create a cursor object to interact with the database
         cursor = db.cursor()
 
-        # Execute the SQL query to retrieve all states with names starting with 'N'
+        # Execute SQL query to retrieve all states with names starting with N
         cursor.execute("SELECT * FROM states WHERE name LIKE 'N%' ORDER BY id")
 
         # Fetch all rows from the result set
@@ -43,7 +43,7 @@ def list_states_with_n(username, password, database_name):
 
 # Check if the script is run as the main module
 if __name__ == "__main__":
-    # Check if all three arguments are provided (username, password, database name)
+    # Check if all 3 arguments are provided (username, password, database name)
     if len(sys.argv) != 4:
         # Print the usage message and exit with an error code of 1
         print("Usage: python script_name.py <username> <password> <db_name>")
@@ -54,5 +54,5 @@ if __name__ == "__main__":
     password = sys.argv[2]
     database_name = sys.argv[3]
 
-    # Call the function to list states with names starting with 'N' from the database
+    # Call function to list states with names starting with N from the database
     list_states_with_n(username, password, database_name)
