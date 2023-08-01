@@ -22,7 +22,8 @@ def filter_states_by_name(username, password, database_name, state_name):
         cursor = db.cursor()
 
         # Use format to create the SQL query with user input
-        query = "SELECT * FROM states WHERE name = '{}' ORDER BY id".format(state_name)
+        query = "SELECT * FROM states WHERE name = '{}' ORDER BY id".format(
+            state_name)
         cursor.execute(query)
 
         # Fetch all rows from the result set
@@ -41,11 +42,11 @@ def filter_states_by_name(username, password, database_name, state_name):
         cursor.close()
         db.close()
 
+
 # Check if the script is run as the main module
-
-
 if __name__ == "__main__":
-        # Check if all arguments are provided
+    # Check if all four arguments are provided (username, password, database name, state name)
+    if len(sys.argv) != 5:
         # Print the usage message and exit with an error code of 1
         print("Usage: python script_name.py <username> <password> <db_name> <state_name>")
         sys.exit(1)
@@ -57,5 +58,4 @@ if __name__ == "__main__":
     state_name = sys.argv[4]
 
     # Call the function to display values in the states table matching the provided name
-
     filter_states_by_name(username, password, database_name, state_name)
