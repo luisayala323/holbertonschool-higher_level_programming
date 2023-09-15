@@ -1,6 +1,6 @@
 // 8-script.js
 document.addEventListener('DOMContentLoaded', function () {
-    // Select the element with id "hello"
+    // Select the element with id  "hello"
     var helloElement = document.getElementById('hello');
   
     // Define the URL for fetching the translation
