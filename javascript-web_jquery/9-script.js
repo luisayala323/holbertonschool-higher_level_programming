@@ -1,5 +1,3 @@
-$.get('https://swapi-api.hbtn.io/api/films/?format=json', function (data) {
-  for (const film of data.results) {
-    $('ul#list_movies').append(`<li>${film.title}</li>`);
-  }
+$.get('https://hellosalut.stefanbohacek.dev/?lang=fr', function (fetch) {
+  $('#hello').text(fetch.hello);
 });
